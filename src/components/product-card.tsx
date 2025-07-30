@@ -11,7 +11,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div
-      className="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border"
+      className="rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-102 hover:shadow-xl border"
       style={{
         backgroundColor: themeConfig.colors.surface,
         borderColor: `${themeConfig.colors.primary}20`,
@@ -19,9 +19,9 @@ export function ProductCard({ product }: ProductCardProps) {
     >
       <div className="aspect-square overflow-hidden">
         <img
-          src={product.image || "/placeholder.svg"}
+          src={product.image}
           alt={product.title}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-108"
           onError={(e) => {
             const target = e.target as HTMLImageElement
             target.src = `/placeholder.svg?height=300&width=300&text=${encodeURIComponent(product.title)}`

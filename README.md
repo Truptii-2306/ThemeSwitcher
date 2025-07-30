@@ -41,49 +41,53 @@ A modern React TypeScript application featuring dynamic theme switching with thr
 ### Setup Instructions
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/Truptii-2306/ThemeSwitcher.git
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
+ 
 
 3. **Start the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
+
 
 4. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ## 🏗️ Project Structure
 
-\`\`\`
+## 🏗️ Project Structure
+
+```
 src/
-├── components/           # Reusable UI components
-│   ├── Header.tsx       # Navigation header with theme switcher
-│   ├── LayoutWrapper.tsx # Main layout wrapper
-│   └── ProductCard.tsx  # Product display component
-├── contexts/            # React Context providers
-│   └── ThemeContext.tsx # Theme management context
-├── hooks/               # Custom React hooks
-│   └── useProducts.ts   # Product data fetching hook
-├── pages/               # Page components
-│   ├── Home.tsx         # Home page with products
-│   ├── About.tsx        # About page
-│   └── Contact.tsx      # Contact page with form
-├── types/               # TypeScript type definitions
-│   └── index.ts         # Shared interfaces and types
-├── App.tsx              # Main app component with routing
-├── main.tsx             # React app entry point
-└── index.css            # Global styles and Tailwind imports
-\`\`\`
+├── components/             # Reusable UI components
+│   ├── Header.tsx          # Navigation header with theme switcher
+│   ├── LayoutWrapper.tsx   # Main layout wrapper for pages
+│   └── ProductCard.tsx     # Product display card
+├── contexts/               # React Context providers
+│   └── ThemeContext.tsx    # Theme state and provider
+├── hooks/                  # Custom React hooks
+│   └── useProducts.ts      # Hook for fetching product data
+├── pages/                  # Page components (routes)
+│   ├── Home.tsx            # Home page with product showcase
+│   ├── About.tsx           # About/Info page
+│   └── Contact.tsx         # Contact page with form
+├── types/                  # TypeScript type definitions
+│   └── index.ts            # Shared interfaces and types
+├── App.tsx                 # Main app component (routing entry)
+├── main.tsx                # React app bootstrap entry
+└── index.css               # Global styles and Tailwind imports
+```
 
 ## 🎨 Theme System
 
@@ -94,12 +98,12 @@ Each theme includes:
 - **Layout**: Different structural layouts (default, sidebar, grid)
 
 ### Theme Switching
-\`\`\`typescript
+```typescript
 const { currentTheme, setTheme, themeConfig } = useTheme()
 
 // Switch to a different theme
 setTheme('theme2')
-\`\`\`
+```
 
 ### Adding New Themes
 1. Define theme configuration in `src/contexts/ThemeContext.tsx`
@@ -126,21 +130,21 @@ The application is fully responsive with:
 
 The app integrates with the [FakeStore API](https://fakestoreapi.com/) to fetch real product data:
 
-\`\`\`typescript
+```typescript
 // Example API call
 const response = await fetch('https://fakestoreapi.com/products')
 const products = await response.json()
-\`\`\`
+```
 
 ## 🎯 Key Components
 
 ### ThemeProvider
 Manages global theme state and provides theme switching functionality:
-\`\`\`typescript
+```typescript
 <ThemeProvider>
   <App />
 </ThemeProvider>
-\`\`\`
+```
 
 ### Header Component
 - Responsive navigation
@@ -165,7 +169,7 @@ Manages global theme state and provides theme switching functionality:
 
 ### Adding Custom Themes
 1. Create a new theme configuration:
-\`\`\`typescript
+```typescript
 const customTheme: ThemeConfig = {
   name: "custom",
   displayName: "Custom Theme",
@@ -179,7 +183,7 @@ const customTheme: ThemeConfig = {
   },
   layout: "default" // or "sidebar" or "grid"
 }
-\`\`\`
+```
 
 2. Add to the themes object in `ThemeContext.tsx`
 
@@ -206,15 +210,15 @@ The application includes:
 ## 🚀 Deployment
 
 ### Build for Production
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### Deploy to Vercel
-\`\`\`bash
+```bash
 npm install -g vercel
 vercel --prod
-\`\`\`
+```
 
 ## 🙏 Acknowledgments
 

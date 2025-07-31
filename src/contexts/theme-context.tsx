@@ -25,15 +25,15 @@ const themes: Record<ThemeType, ThemeConfig> = {
     name: "theme2",
     displayName: "Dark Professional",
     colors: {
-      primary: "#f59e0b",
-      secondary: "#6b7280",
-      background: "#111827",
-      surface: "#1f2937",
-      text: "#f9fafb",
-      textSecondary: "#d1d5db",
-      accent: "#fbbf24",
+      primary: "#8b5cf6",
+      secondary: "#06b6d4",
+      background: "#0f0f23",
+      surface: "#1e1b4b",
+      text: "#f1f5f9",
+      textSecondary: "#cbd5e1",
+      accent: "#10b981",
     },
-    fonts: {
+   fonts: {
       primary: "Georgia, serif",
       secondary: "Georgia, serif",
     },
@@ -45,7 +45,7 @@ const themes: Record<ThemeType, ThemeConfig> = {
     colors: {
       primary: "#ec4899",
       secondary: "#8b5cf6",
-      background: "#fef3c7",
+      background: "#f8f2d8ff",
       surface: "#ffffff",
       text: "#1f2937",
       textSecondary: "#6b7280",

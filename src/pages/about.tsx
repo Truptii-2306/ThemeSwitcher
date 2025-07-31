@@ -30,9 +30,9 @@ export function About() {
 
   return (
     <LayoutWrapper>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-16">
         {/* Hero Section */}
-        <section className="text-center py-16 space-y-6">
+        <section className="text-center py-8 lg:py-16 space-y-6">
           <h1
             className="text-4xl md:text-6xl font-bold"
             style={{
@@ -57,7 +57,7 @@ export function About() {
         </section>
 
         {/* Story Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2
@@ -84,25 +84,27 @@ export function About() {
                 </p>
               </div>
             </div>
-
-            <div
-              className="aspect-square rounded-2xl flex items-center justify-center"
-              style={{ backgroundColor: themeConfig.colors.surface }}
-            >
+            <div className="flex justify-center h-full">
               <div
-                className="w-32 h-32 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: themeConfig.colors.primary }}
+                className="aspect-square max-h-[400px] min-h-[300px] rounded-2xl flex items-center justify-center"
+                style={{ backgroundColor: themeConfig.colors.surface }}
               >
-                <span className="text-4xl font-bold text-white" style={{ fontFamily: themeConfig.fonts.primary }}>
-                  TA
-                </span>
+                <div
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full flex items-center justify-center transition-transform duration-500 hover:scale-110"
+                  style={{ backgroundColor: themeConfig.colors.primary }}
+                >
+                  <span className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: themeConfig.fonts.primary }}>
+                    TA
+                  </span>
+                </div>
               </div>
             </div>
+
           </div>
         </section>
 
         {/* Values Section */}
-        <section className="py-16">
+        <section className="pb-8 lg:py-16">
           <h2
             className="text-3xl font-bold text-center mb-12"
             style={{

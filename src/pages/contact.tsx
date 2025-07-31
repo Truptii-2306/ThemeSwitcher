@@ -54,9 +54,9 @@ export function Contact() {
 
   return (
     <LayoutWrapper>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-16">
         {/* Hero Section */}
-        <section className="text-center py-16 space-y-6">
+        <section className="text-center py-8 lg:py-16 space-y-6">
           <h1
             className="text-4xl md:text-6xl font-bold"
             style={{
@@ -227,7 +227,7 @@ export function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-8 mb-4">
             <div>
               <h2
                 className="text-2xl font-bold mb-6"

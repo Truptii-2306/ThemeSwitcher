@@ -84,7 +84,7 @@ export function Home() {
   }
 
   const HeroSection = () => (
-    <section className="text-center py-16 space-y-6">
+    <section className="text-center py:4 lg:py-16 space-y-6">
       <h1
         className={`text-4xl md:text-6xl font-bold transition-all duration-500 ${
           themeConfig.layout === "grid" ? "transform hover:scale-105" : ""

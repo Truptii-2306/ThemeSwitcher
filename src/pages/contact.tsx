@@ -244,7 +244,7 @@ export function Contact() {
                   <a
                     key={index}
                     href={info.link}
-                    className="flex items-center space-x-4 p-4 rounded-lg transition-all duration-200 hover:scale-105 border group"
+                    className="flex items-center space-x-4 p-4 rounded-lg transition-all duration-200 hover:scale-103 border group"
                     style={{
                       backgroundColor: themeConfig.colors.surface,
                       borderColor: `${themeConfig.colors.primary}20`,
